@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+form {
+    width: 90%;
+
+    background: #FF9900;
+    position: absolute;
+    top: 24rem;
+    left: 5%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 3rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+form label {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    position: relative;
+}
+
+form label i {
+    position: absolute;
+    bottom: 27%;
+    left: 5px;
+    color: rgb(0,0,0,.4);
+}
+
+form input {
+    height: 2.3rem;
+    width: 95%;
+    margin: 1rem 0;
+    padding: 0 10%;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+
+form a {
+    position: absolute;
+    right: 15%;
+    bottom: 35%;
+    text-decoration: none;
+    color: #8D8D8D;
+}
+
+form button {
+    width: 95%;
+    height: 3rem;
+    margin-top: 2rem;
+    border: 1px solid #ccc;
+    background: #F0F0F0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: 10px;
+}

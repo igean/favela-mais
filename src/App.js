@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './styles/main.css'
+import Login from './Form'
+import logo from './images/icon.jpg'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    {
+        return (
+            <div className="parent">
+                <header>
+                <h1>Bem vindo</h1>
+                <img src={logo}></img>
+                </header>
+                <main>
+                <p>Nosso intuito é garantir união entre todos e todas, colaborar com o desenvolvimento da comunidade!</p>
+                </main>
+                <Login />
+            </div>
+            
+        )
+    }
 }
 
 export default App;
