@@ -6,7 +6,7 @@ class Dash extends React.Component{
     render() {
         return (
             <div>
-                <header>
+                <header className="dash">
                     <h2>Olá <br /> Renan Santana</h2>
                 </header>
                 <main className="dash">

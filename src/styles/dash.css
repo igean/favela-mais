@@ -6,8 +6,8 @@ body, html {
     min-height: 100vh;
 }
 
-header {
-    padding: 0 1rem;
+header.dash {
+    padding-left: 10%;
     font-family: 'Nunito', sans-serif;
 }
 
