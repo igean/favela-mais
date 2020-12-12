@@ -30,13 +30,13 @@ h1 {
     font-size: 2rem;
 }
 
-main {
-    background: 50% 10%/300px url(../images/bg-main.jpg) no-repeat;
+main.main {
+    background: 50% 10%/300px url(../images/people.png) no-repeat;
     height: 100%;
     position: absolute;
 }
 
-main p {
+main.main p {
     text-align: justify;
     width: 70%;
     margin: auto;

@@ -41,10 +41,39 @@ form input {
     box-sizing: border-box;
 }
 
-form a {
-    position: absolute;
-    right: 15%;
-    bottom: 35%;
+.subform {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    font-size: .7rem;
+    height: 1rem;
+}
+
+.subform div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.subform label {
+    margin-left: 5px;
+    color: #F0F0F0;
+}
+
+.subform input {
+    width: 1rem;
+    border: 1px solid black;
+}
+
+.subform label {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: .7rem;
+}
+
+.subform a {
     text-decoration: none;
     color: #8D8D8D;
 }
@@ -58,4 +87,9 @@ form button {
     font-size: 1.4rem;
     font-weight: 600;
     border-radius: 10px;
+}
+
+form .no-account {
+    margin: 20px auto 0;
+    font-size: .7rem;
 }

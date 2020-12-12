@@ -11,7 +11,7 @@ function App() {
                 <h1>Bem vindo</h1>
                 <img src={logo}></img>
                 </header>
-                <main>
+                <main className="main">
                 <p>Nosso intuito é garantir união entre todos e todas, colaborar com o desenvolvimento da comunidade!</p>
                 </main>
                 <Login />

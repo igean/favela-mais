@@ -24,8 +24,15 @@ class Login extends React.Component {
                     <input type="password"></input>
                     </div>
                 </label>
-                <a href="/esqueci-minha-senha">Esqueci minha senha</a>
+                <div className="subform">
+                    <div>
+                        <label>Lembrar minha senha</label>
+                        <input type="checkbox"></input>
+                    </div>
+                    <a href="/esqueci-minha-senha">Esqueci minha senha</a>
+                </div>
                 <button type="submit">Entrar</button>
+                <a className="no-account">Não tenho uma conta</a>
             </form>
         )
     }
