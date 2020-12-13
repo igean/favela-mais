@@ -49,3 +49,42 @@ h3 {
     margin-left: 10%;
     margin-top: 4rem;
 }
+
+.go-event {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go-event button {
+    height: 2rem;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.dont-go {
+    background: orange;
+    color: white;
+    border: none;
+}
+
+.go {
+    background: white;
+    color: orange;
+    border: 2px solid rgb(206, 134, 0);
+}
+
+.canceled {
+    text-align: center;
+}
+
+.canceled button {
+    background: red;
+    color: white;
+    height: 3rem;
+    width: 80%;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+}
