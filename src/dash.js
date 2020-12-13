@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/dash.css";
 import "./styles/menu.css";
 
-import "./scripts/dash-menu"
+import "./scripts/dash-menu";
 
 import HomePage from "./HomePage";
 import EventPage from "./EventPage";

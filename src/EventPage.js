@@ -9,6 +9,7 @@ const EventPage = () => {
         sociedade mais acolhedora, empregadora e justa.
       </p>
 
+      <h3>Próximos eventos</h3>
       <div className="events-cards">
         <div className="card">
           <div className="img-container">
