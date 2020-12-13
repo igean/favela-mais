@@ -1,8 +1,13 @@
 import React from "react";
+
 import "./styles/dash.css";
+import "./styles/menu.css";
+
 import "./scripts/dash-menu";
+
 import HomePage from "./HomePage";
 import EventPage from "./EventPage";
+import EducPage from "./EducPage";
 
 class Dash extends React.Component {
   constructor(props) {
@@ -87,6 +92,7 @@ class Dash extends React.Component {
         <main className="dash">
           <HomePage />
           <EventPage />
+          <EducPage />
 
           <div className="menu" id="bottom-menu">
             <strong>Navegue pelas opções abaixo</strong>
@@ -101,7 +107,7 @@ class Dash extends React.Component {
               <button className="item" id="btn-events" onClick={this.goEvents}>
                 <i className="fas fa-users fa-3x" />
               </button>
-              <button className="item" id="btn-educ">
+              <button className="item" id="btn-educ" onClick={this.goEduc}>
                 <i className="fas fa-book-reader fa-3x" />
               </button>
               <button className="item" id="btn-user">

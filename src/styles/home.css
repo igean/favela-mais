@@ -1,0 +1,21 @@
+#home {
+    background: 50% 10%/300px url('../images/winners.png') no-repeat;
+
+    min-height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1;
+
+    padding-bottom: 3rem;
+
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#home p {
+    text-align: justify;
+    color: #4d4d4d;
+}
+
+#home p ~ p {
+    margin-top: 70%;
+}
