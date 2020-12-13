@@ -1,6 +1,8 @@
 import React from "react";
 import './styles/events.css';
 
+import { CreateEvent } from './Form';
+
 const EventPage = () => {
   return (
     <div className="page" id="events">
@@ -220,6 +222,8 @@ const EventPage = () => {
           </div>
         </div>
       </div>
+
+      <CreateEvent />
     </div>
   );
 };
