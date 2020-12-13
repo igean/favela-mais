@@ -9,7 +9,7 @@ class Login extends React.Component {
 
     render() {
         return (
-            <form>
+            <form action="/inicio">
                 <label>
                     CPF:
                     <div className="input-block">

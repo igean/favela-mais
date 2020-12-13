@@ -7,8 +7,31 @@ body, html {
 }
 
 header.dash {
-    padding-left: 10%;
+    padding: 0 10%;
     font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span.text-o {
+    color: orange;
+}
+
+span.bold {
+    font-weight: 600;
+}
+
+header .circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffc400;
+    color: white;
 }
 
 main.dash {
@@ -34,7 +57,7 @@ p ~ p {
 
 .menu {
     background: white;
-    border-radius: .5rem;
+    border-radius: .4rem;
     padding-top: 1rem;
 
     max-width: 100vw;
@@ -59,8 +82,12 @@ p ~ p {
 }
 
 .item {
-    padding: 50px;
+    padding: 30px;
     background: orange;
     margin: 5px;
     border-radius: 10px;
+}
+
+.menu i {
+    color: white;
 }
