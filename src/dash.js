@@ -20,14 +20,12 @@ class Dash extends React.Component {
     const buttons = document.querySelectorAll("button");
     const btn_home = document.getElementById("btn-home");
     pages.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.pointerEvents = "none";
+      el.style.display = "none"
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
     });
-    home.style.opacity = "1";
-    home.style.pointerEvents = "all";
+    home.style.display = "block"
     btn_home.classList.add("selected");
   }
 
@@ -37,14 +35,12 @@ class Dash extends React.Component {
     const buttons = document.querySelectorAll("button");
     const btn_events = document.getElementById("btn-events");
     pages.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.pointerEvents = "none";
+      el.style.display = "none"
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
     });
-    events.style.opacity = "1";
-    events.style.pointerEvents = "all";
+    events.style.display = "block"
     btn_events.classList.add("selected");
   }
 
@@ -54,14 +50,12 @@ class Dash extends React.Component {
     const buttons = document.querySelectorAll("button");
     const btn_educ = document.getElementById("btn-educ");
     pages.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.pointerEvents = "none";
+      el.style.display = "none"
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
     });
-    educ.style.opacity = "1";
-    educ.style.pointerEvents = "all";
+    educ.style.display = "block"
     btn_educ.classList.add("selected");
   }
 
@@ -71,14 +65,12 @@ class Dash extends React.Component {
     const buttons = document.querySelectorAll("button");
     const btn_user = document.getElementById("btn-user");
     pages.forEach((el) => {
-      el.style.opacity = "0";
-      el.style.pointerEvents = "none";
+      el.style.display = "none"
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
     });
-    user.style.opacity = "1";
-    user.style.pointerEvents = "all";
+    user.style.display = "block"
     btn_user.classList.add("selected");
   }
 
