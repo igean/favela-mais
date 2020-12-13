@@ -38,6 +38,7 @@ main.dash {
     display: grid;
     grid-template-columns: 100%;
     grid-template-columns: 100%;
+    padding-bottom: 7rem;
 }
 
 #home {
@@ -51,9 +52,6 @@ main.dash {
 
     grid-row: 1/2;
     grid-column: 1/2;
-
-    opacity: 0;
-    pointer-events: none;
 }
 
 p {
@@ -82,6 +80,7 @@ p {
 
     text-align: right;
     box-shadow: 3px 2px 8px black;
+    transition: .2s ease-in-out;
 }
 
 .menu strong{
@@ -100,7 +99,17 @@ p {
     padding: 30px;
     background: orange;
     margin: 5px;
+    border: 0px solid black;
     border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.item:hover {
+    background: rgb(192, 125, 0);
+}
+
+.item.selected {
+    background: rgb(192, 125, 0);
 }
 
 .menu i {
@@ -110,33 +119,43 @@ p {
 #events {
     grid-row: 1/2;
     grid-column: 1/2;
+    padding-bottom: 3rem;
+
+    opacity: 0;
+    pointer-events: none;
+}
+
+.events-cards {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 10px;
+    margin-top: 4rem;
 }
 
 .card {
-    width: 30rem;
     border: 1px solid #CCC;
     border-radius: 10px;
+    margin: 0 10px;
     background: orange;
     color: white;
 }
 
-.card img {
-    height: 10rem;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.card .img-container {
-    object-fit: cover;
-}
-
 .card-info {
+    margin: 0 10%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem;
+}
+
+.card img {
+    width: 18rem;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-body {
-    margin: 1rem;
+    margin: 0 10%;
+}
+
+.card-body p {
+    margin: 1.4rem 0;
 }

@@ -1,7 +1,78 @@
 import React from "react";
 import "./styles/dash.css";
+import "./scripts/dash-menu";
+import HomePage from "./HomePage";
+import EventPage from "./EventPage";
 
 class Dash extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  goHome() {
+    const home = document.getElementById("home");
+    const pages = document.querySelectorAll(".page");
+    const buttons = document.querySelectorAll("button");
+    const btn_home = document.getElementById("btn-home");
+    pages.forEach((el) => {
+      el.style.opacity = "0";
+    });
+    buttons.forEach((el) => {
+      el.classList.remove("selected");
+    });
+    home.style.opacity = "1";
+    home.style.pointerEvents = "all";
+    btn_home.classList.add("selected");
+  }
+
+  goEvents() {
+    const events = document.getElementById("events");
+    const pages = document.querySelectorAll(".page");
+    const buttons = document.querySelectorAll("button");
+    const btn_events = document.getElementById("btn-events");
+    pages.forEach((el) => {
+      el.style.opacity = "0";
+    });
+    buttons.forEach((el) => {
+      el.classList.remove("selected");
+    });
+    events.style.opacity = "1";
+    events.style.pointerEvents = "all";
+    btn_events.classList.add("selected");
+  }
+
+  goEduc() {
+    const educ = document.getElementById("educ");
+    const pages = document.querySelectorAll(".page");
+    const buttons = document.querySelectorAll("button");
+    const btn_educ = document.getElementById("btn-educ");
+    pages.forEach((el) => {
+      el.style.opacity = "0";
+    });
+    buttons.forEach((el) => {
+      el.classList.remove("selected");
+    });
+    educ.style.opacity = "1";
+    educ.style.pointerEvents = "all";
+    btn_educ.classList.add("selected");
+  }
+
+  goUser() {
+    const user = document.getElementById("user");
+    const pages = document.querySelectorAll(".page");
+    const buttons = document.querySelectorAll("button");
+    const btn_user = document.getElementById("btn-user");
+    pages.forEach((el) => {
+      el.style.opacity = "0";
+    });
+    buttons.forEach((el) => {
+      el.classList.remove("selected");
+    });
+    user.style.opacity = "1";
+    user.style.pointerEvents = "all";
+    btn_user.classList.add("selected");
+  }
+
   render() {
     return (
       <div>
@@ -14,120 +85,30 @@ class Dash extends React.Component {
           </div>
         </header>
         <main className="dash">
-          <div className="page" id="home">
-            <p>
-              Nosso intuito é unir você <span className="text-o">CAMPEÃO</span>{" "}
-              que busca sucesso financeiro, ou até aprender uma nova arte,
-              tecnologia, empreendimento.
-            </p>
+          <HomePage />
+          <EventPage />
 
-            <p>
-              Somos uma plataforma filantrópica que tem como objetivo{" "}
-              <span className="bold">IMPACTAR</span> e dar visibilidade a toda
-              comunidade, e tornar em um espaço para todos.
-            </p>
-          </div>
-
-          <div className="page" id="events">
-            <p>
-              Acompanhe aqui os eventos atuais da comunidade, faça parte de uma sociedade mais acolhedora, empregadora e justa.
-            </p>
-
+          <div className="menu" id="bottom-menu">
+            <strong>Navegue pelas opções abaixo</strong>
             <div className="items">
-                <div className="card">
-                    <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1570715431238-e70313e87b8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" />
-                    </div>
-                    <div className="card-info">
-                     <strong className="card-title">União 1.0</strong>
-                     <span>12/12/2020</span>
-                     </div>
-                     <div className="card-body">
-                         <p><i />Antonio Nunes</p>
-                         <p>Esse evento visa unir as comunidades para a arrecadação de roupas para doação</p>
-                         <p>CONFIRMADO: 85 pessoas</p>
-                     </div>
-                </div>
-
-                <div className="card">
-                    <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1570715431238-e70313e87b8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" />
-                    </div>
-                    <div className="card-info">
-                     <strong className="card-title">União 1.0</strong>
-                     <span>12/12/2020</span>
-                     </div>
-                     <div className="card-body">
-                         <p><i />Antonio Nunes</p>
-                         <p>Esse evento visa unir as comunidades para a arrecadação de roupas para doação</p>
-                         <p>CONFIRMADO: 85 pessoas</p>
-                     </div>
-                </div>
-
-                <div className="card">
-                    <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1570715431238-e70313e87b8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" />
-                    </div>
-                    <div className="card-info">
-                     <strong className="card-title">União 1.0</strong>
-                     <span>12/12/2020</span>
-                     </div>
-                     <div className="card-body">
-                         <p><i />Antonio Nunes</p>
-                         <p>Esse evento visa unir as comunidades para a arrecadação de roupas para doação</p>
-                         <p>CONFIRMADO: 85 pessoas</p>
-                     </div>
-                </div>
-
-                <div className="card">
-                    <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1570715431238-e70313e87b8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" />
-                    </div>
-                    <div className="card-info">
-                     <strong className="card-title">União 1.0</strong>
-                     <span>12/12/2020</span>
-                     </div>
-                     <div className="card-body">
-                         <p><i />Antonio Nunes</p>
-                         <p>Esse evento visa unir as comunidades para a arrecadação de roupas para doação</p>
-                         <p>CONFIRMADO: 85 pessoas</p>
-                     </div>
-                </div>
-
-                <div className="card">
-                    <div className="img-container">
-                    <img src="https://images.unsplash.com/photo-1570715431238-e70313e87b8a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" />
-                    </div>
-                    <div className="card-info">
-                     <strong className="card-title">União 1.0</strong>
-                     <span>12/12/2020</span>
-                     </div>
-                     <div className="card-body">
-                         <p><i />Antonio Nunes</p>
-                         <p>Esse evento visa unir as comunidades para a arrecadação de roupas para doação</p>
-                         <p>CONFIRMADO: 85 pessoas</p>
-                     </div>
-                </div>
+              <button
+                className="item selected"
+                id="btn-home"
+                onClick={this.goHome}
+              >
+                <i className="fas fa-home fa-3x" />
+              </button>
+              <button className="item" id="btn-events" onClick={this.goEvents}>
+                <i className="fas fa-users fa-3x" />
+              </button>
+              <button className="item" id="btn-educ">
+                <i className="fas fa-book-reader fa-3x" />
+              </button>
+              <button className="item" id="btn-user">
+                <i className="fas fa-user-circle fa-3x" />
+              </button>
             </div>
           </div>
-
-          <div className="menu">
-              <strong>Navegue pelas opções abaixo</strong>
-              <div className="items">
-                <div className="item">
-                  <i className="fas fa-home fa-3x" />
-                </div>
-                <div className="item">
-                  <i className="fas fa-users fa-3x" />
-                </div>
-                <div className="item">
-                  <i className="fas fa-book-reader fa-3x" />
-                </div>
-                <div className="item">
-                  <i className="fas fa-user-circle fa-3x" />
-                </div>
-              </div>
-            </div>
         </main>
       </div>
     );
