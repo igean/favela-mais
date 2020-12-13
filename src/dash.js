@@ -3,7 +3,7 @@ import React from "react";
 import "./styles/dash.css";
 import "./styles/menu.css";
 
-import "./scripts/dash-menu";
+import "./scripts/dash-menu"
 
 import HomePage from "./HomePage";
 import EventPage from "./EventPage";
@@ -21,6 +21,7 @@ class Dash extends React.Component {
     const btn_home = document.getElementById("btn-home");
     pages.forEach((el) => {
       el.style.opacity = "0";
+      el.style.pointerEvents = "none";
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
@@ -37,6 +38,7 @@ class Dash extends React.Component {
     const btn_events = document.getElementById("btn-events");
     pages.forEach((el) => {
       el.style.opacity = "0";
+      el.style.pointerEvents = "none";
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
@@ -53,6 +55,7 @@ class Dash extends React.Component {
     const btn_educ = document.getElementById("btn-educ");
     pages.forEach((el) => {
       el.style.opacity = "0";
+      el.style.pointerEvents = "none";
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");
@@ -69,6 +72,7 @@ class Dash extends React.Component {
     const btn_user = document.getElementById("btn-user");
     pages.forEach((el) => {
       el.style.opacity = "0";
+      el.style.pointerEvents = "none";
     });
     buttons.forEach((el) => {
       el.classList.remove("selected");

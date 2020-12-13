@@ -1,4 +1,5 @@
 import React from "react";
+import './styles/educ.css'
 
 const EducPage = () => {
   return (

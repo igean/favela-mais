@@ -11,7 +11,7 @@ const HomePage = () => {
       </p>
 
       <p>
-        Somos uma plataforma filantrópica que tem como objetivo{" "}
+        Somos uma plataforma filantrópica que tem como objetivo
         <span className="bold">IMPACTAR</span> e dar visibilidade a toda
         comunidade, e tornar em um espaço para todos.
       </p>
