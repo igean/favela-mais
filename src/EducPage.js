@@ -35,16 +35,34 @@ const EducPage = () => {
             <div className="course">
               <strong>EMPREENDENDO COM A COMUNIDADE</strong>
               <p>O empreendedorismo é a melhor arma contra o desemprego. Com ele podemos criar, inovar, alterar toda nossa vida.</p>
+              <div className="payment">
+                <strong>Aceitamos</strong>
+              <div className="cards">
+              <i className="fab fa-cc-paypal fa-2x" />
+                <i className="fab fa-cc-visa fa-2x" />
+                <i className="fab fa-cc-mastercard fa-2x" />
+              </div>
+              </div>
               <div className="enter-course">
-                <i class="fas fa-unlock fa-2x" />
+                <i class="fas fa-lock fa-2x" />
                 <button>Estou interessado</button>
               </div>
             </div>
             <div className="course">
               <strong>EMPREENDENDO COM A COMUNIDADE</strong>
               <p>O empreendedorismo é a melhor arma contra o desemprego. Com ele podemos criar, inovar, alterar toda nossa vida.</p>
+
+              <div className="payment">
+                <strong>Aceitamos</strong>
+              <div className="cards">
+              <i className="fab fa-cc-paypal fa-2x" />
+                <i className="fab fa-cc-visa fa-2x" />
+                <i className="fab fa-cc-mastercard fa-2x" />
+              </div>
+              </div>
+              
               <div className="enter-course">
-                <i class="fas fa-unlock fa-2x" />
+                <i class="fas fa-lock fa-2x" />
                 <button>Estou interessado</button>
               </div>
             </div>

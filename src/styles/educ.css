@@ -59,6 +59,41 @@
     border-radius: 5px;
 }
 
-.enter-course i {
+.payed .course{
+    position: relative;
+}
+
+.payed .enter-course {
+    margin-top: 5rem;
+}
+
+.payment {
+    position: absolute;
+    right: 5%;
+    bottom: 4rem;
+    text-align: right;
+}
+
+.payment i {
+    margin: 5px;
+}
+
+.fa-unlock {
     color: green;
+}
+
+.fa-lock {
+    color: red;
+}
+
+.fa-cc-visa {
+    color: rgb(150, 0, 27);
+}
+
+.fa-cc-paypal {
+    color: rgb(25, 102, 138);
+}
+
+.fa-cc-mastercard {
+    color: rgb(235, 114, 0);
 }
