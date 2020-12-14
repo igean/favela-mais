@@ -32,7 +32,6 @@ header  img {
 
 h1 {
     color: #F6B338;
-    text-shadow: 5px 3px 10px #ccc;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 2rem;
 }
@@ -62,6 +61,14 @@ a, label {
         padding: 0;
     }
 
+    header img {
+        display: none;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
     .parent {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -73,5 +80,17 @@ a, label {
 
     main.main p {
         display: none;
+        padding-right: 10rem;
+    }
+
+    .pic {
+        background: 100% 30%/auto url(../images/main-bg.png) no-repeat;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    label {
+        color: black;
     }
 }

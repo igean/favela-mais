@@ -4,7 +4,7 @@ import './styles/home.css';
 const HomePage = () => {
   return (
 
-    <div className="main-home">
+    <div className="page main-home">
       <header className="dash">
           <h2>
             <span className="text-o">Olá</span> <br /> Renan Santana
@@ -13,7 +13,7 @@ const HomePage = () => {
             <i className="fas fa-question" />
           </div>
         </header>
-    <div className="page" id="home">
+    <main id="home">
       <p>
         Nosso intuito é unir você <span className="text-o">CAMPEÃO</span> que
         busca sucesso financeiro, ou até aprender uma nova arte, tecnologia,
@@ -25,7 +25,7 @@ const HomePage = () => {
         <span className="bold"> IMPACTAR</span> e dar visibilidade a toda
         comunidade, e tornar em um espaço para todos.
       </p>
-    </div>
+    </main>
     </div>
   );
 };

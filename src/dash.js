@@ -15,7 +15,7 @@ class Dash extends React.Component {
   }
 
   goHome() {
-    const home = document.getElementById("home");
+    const home = document.querySelector(".main-home");
     const pages = document.querySelectorAll(".page");
     const buttons = document.querySelectorAll("button");
     const btn_home = document.getElementById("btn-home");
@@ -77,7 +77,7 @@ class Dash extends React.Component {
   render() {
     return (
       <div>
-        <main className="dash">
+        <div className="dash">
           <HomePage />
           <EventPage />
           <EducPage />
@@ -107,7 +107,7 @@ class Dash extends React.Component {
               </button>
             </div>
           </div>
-        </main>
+        </div>
       </div>
     );
   }

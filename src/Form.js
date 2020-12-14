@@ -20,19 +20,19 @@ class Login extends React.Component {
                 <label>
                     Senha:
                     <div className="input-block">
-                    <i className="fas fa-lock"></i>
+                    <i className="fas fa-lock" style={{color: "rgba(0,0,0,.4)"}}></i>
                     <input type="password"></input>
                     </div>
                 </label>
                 <div className="subform">
                     <div>
-                        <label>Lembrar minha senha</label>
+                        <label style={{color: "black", fontSize:"1rem"}}>Lembrar minha senha</label>
                         <input type="checkbox"></input>
                     </div>
                     <a href="/esqueci-minha-senha">Esqueci minha senha</a>
                 </div>
-                <button type="submit">Entrar</button>
-                <a className="no-account">Não tenho uma conta</a>
+                <button>Entrar</button>
+                <a className="no-account" style={{fontSize:"1.2rem"}}>Não tenho uma conta</a>
             </form>
         )
     }

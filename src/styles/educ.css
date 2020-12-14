@@ -96,3 +96,36 @@
 .fa-cc-mastercard {
     color: rgb(235, 114, 0);
 }
+
+@media (min-width:1024px) {
+    #educ {
+        background: 50% 10%/600px url('../images/awards.png') no-repeat;
+    }
+
+    .courses {
+        flex-direction: row;
+    }
+
+    .courses-options {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .course {
+        max-width: 30rem;
+    }
+
+    .course p {
+        width: 80%;
+    }
+
+    strong {
+        font-size: 2rem;
+    }
+
+   p {
+       font-size: 1.4rem;
+       margin-top: 2rem;
+   }
+}

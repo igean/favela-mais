@@ -97,12 +97,14 @@ form .no-account {
 @media (min-width: 1024px) {
     form {
         background: none;
-        position: static;
+        position: relative;
         grid-column: 1/2;
-        width: auto;
+        padding-right: 2rem;
+        top: 0;
+        pointer-events: all;
     }
 
     form input {
-        border: 1px solid black;
+        background: #ccc;
     }
 }
