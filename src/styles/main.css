@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.pics {
+    display: none;
+}
+
 body, html {
     margin: 0;
     padding: 0;
@@ -20,7 +28,6 @@ header  img {
 
 .parent {
     min-height: 100vh;
-    background: linear-gradient(200deg, #FFFFFF 0%, #E8E8E8 100%);
 }
 
 h1 {
@@ -31,7 +38,7 @@ h1 {
 }
 
 main.main {
-    background: 50% 10%/300px url(../images/people.png) no-repeat;
+    background: 50% 10%/300px url(../images/main-bg.png) no-repeat;
     height: 100%;
     position: absolute;
 }
@@ -40,8 +47,31 @@ main.main p {
     text-align: justify;
     width: 70%;
     margin: auto;
-    font-family: 'Barlow Condensed', sans-serif;
     font-size: 1.2rem;
     line-height: 1;
     color: #8D8D8D;
+}
+
+a, label {
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    main.main {
+        background: none;
+    }
+
+    main.main p {
+        display: none;
+    }
 }

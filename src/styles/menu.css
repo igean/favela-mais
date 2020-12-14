@@ -45,3 +45,45 @@
 .menu i {
     color: white;
 }
+
+@media (min-width: 768px) {
+    .menu {
+        right: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .menu {
+        top: 0;
+        left: 0;
+        height: 5rem;
+        width: 100vw;
+        background: rgb(255, 179, 37);
+        box-shadow: none;
+
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .items {
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .item {
+        width: 10rem;
+        height: 4rem;
+        border-radius: 0;
+        padding: 0;
+        color: white;
+        font-size:  1.4rem;
+    }
+
+    .menu strong {
+        display: none;
+    }
+
+    .menu i {
+        display: none;
+    }
+}

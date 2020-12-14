@@ -15,5 +15,27 @@
 }
 
 #home p ~ p {
-    margin-top: 70%;
+    margin-top: 40%;
+}
+
+
+@media (min-width: 1024px) {
+    #home {
+        margin-top: 2rem;
+        font-size: 2rem;
+        background: none;
+    }
+
+    .main-home {
+        background: 90% 4rem/600px url('../images/winners.png') no-repeat;
+    }
+
+    p {
+        width: 40%;
+        line-height: 1;
+    }
+
+    #home p ~ p {
+        margin-top: .5rem;
+    }
 }

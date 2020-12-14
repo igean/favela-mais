@@ -93,3 +93,16 @@ form .no-account {
     margin: 20px auto 0;
     font-size: .7rem;
 }
+
+@media (min-width: 1024px) {
+    form {
+        background: none;
+        position: static;
+        grid-column: 1/2;
+        width: auto;
+    }
+
+    form input {
+        border: 1px solid black;
+    }
+}
